@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section id="inputContainer">
+            <h1>GET RESUME</h1>
+            <hr>
+            <form>
+                <p>
+                    Name:
+                    <input type="text" id="name" placeholder="Enter your Full Name">
+                </p>
+                <p>
+                    Degree:
+                    <input type="text" placeholder="Name of the degree" id="degName">
+                    <input type="text" placeholder="Institution" id="degInstitution">
+                    <input type="text" placeholder="Year of Pass" id="degYear">
+                    <input type="text" placeholder="Percentage / CGPA" id="degPercent">
+                </p>
+                <p>
+                    12th:
+                    <input type="text" placeholder="Institution" id="hscInstitution">
+                    <input type="text" placeholder="Year of Pass" id="hscYear">
+                    <input type="text" placeholder="Percentage" id="hscPercent">
+                </p>
+                <p>
+                    10th:
+                    <input type="text" placeholder="Institution" id="sslcInstitution">
+                    <input type="text" placeholder="Year of pass" id="sslcYear">
+                    <input type="text" placeholder="Percentage" id="sslcPercent">
+                </p>
+
+                <p>
+                    Date Of Birth:
+                    <input type="date" id="dob">
+                </p>
+
+                <p>
+                    Email:
+                    <input type="email" id="email" placeholder="Enter Your Email ID">
+                </p>
+
+                <p>
+                    Mobile Number:<input type="tel" id="mobile" placeholder="Enter Your Mobile number">
+                </p>
+
+                <p>
+                    LinkedIn: <input type="text" id="linkedin" placeholder="Enter LinkedIn ID">
+                </p>
+
+                <p>
+                    Skills: <input type="text" id="skills" placeholder="Enter Your Skills and Add"><input type="button"
+                        onclick="addSkills()" value="Add">
+                    <br><small><i>
+                            (if you type your skill and click add or enter button, it will eventually add in your
+                            Resume)
+                        </i></small>
+                </p>
+
+                <p>
+                    <input type="button" onclick="getResume()" value="Get Resume">
+                    <br><small><i>
+                        (Input all the details to get a proper Resume)
+                        </i></small>
+                </p>
+            </form>
+        </section>
+
+        <!-- resume -->
+        <section id="resume">
+            <header>
+                <h1 id="resumeName">
+                </h1>
+            </header>
+
+            <div class="education">
+                <h1>Education</h1>
+                <table>
+
+                </table>
+            </div>
+
+            <hr>
+
+            <div id="personal">
+
+            </div>
+            <hr>
+            <div>
+                <h1>Skills</h1>
+                <ul id="skillResume">
+
+                </ul>
+            </div>
+            <hr>
+            <footer>
+
+            </footer>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js">
+
+    </script>
+</body>
+
+</html>
